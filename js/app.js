@@ -194,6 +194,7 @@ let unlock = true;
 //Menu
 let iconMenu = document.querySelector(".icon-menu");
 let menuBody = document.querySelector(".menu__body");
+let header = document.querySelector(".header");
 if (iconMenu != null) {
 	let delay = 500;
 	iconMenu.addEventListener("click", function (e) {
@@ -201,6 +202,7 @@ if (iconMenu != null) {
 			body_lock(delay);
 			iconMenu.classList.toggle("_active");
 			menuBody.classList.toggle("_active");
+			header.classList.toggle("_active");
 		}
 	});
 };
@@ -211,6 +213,7 @@ for (var i=0; i < linkmenu.length; i++) {
 	link.addEventListener('click', function(){
 		iconMenu.classList.remove("_active");
 		menuBody.classList.remove("_active");
+		header.classList.remove("_active");
 	});
 }
 function menu_close() {

@@ -290,6 +290,10 @@ body.ie ._ibg img {
   z-index: 2;
 }
 
+.header._active {
+  position: fixed;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
